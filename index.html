@@ -11,32 +11,24 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="h-screen p-6 bg-indigo-900">
-    <h1 class="text-center text-6xl text-indigo-100">Hover Modifier</h1>
-    <div class="w-full p-3 bg-gray-100 mb-2 rounded-lg">
+  <body class="p-6 bg-indigo-900">
+    <h1 class="text-center text-6xl text-indigo-100">Transitions Modifiers</h1>
+    <div class="flex items-start p-3 bg-gray-100 mb-2 rounded-lg mt-6">
       <button
-        class="bg-yellow-300 text-indigo font-bold py-2 px-4 rounded hover:bg-white hover:text-red-900 focus:bg-green-500 focus:border-yellow-500"
+        class="py-4 mr-3 bg-yellow-300 hover:duration-1000 text-indigo font-bold py-2 px-4 rounded hover:bg-white hover:text-red-900 focus:bg-green-500 focus:border-yellow-500 transition-all"
       >
         Submit
       </button>
-    </div>
-    <div class="flex bg-gray-300 p-6 rounded-lg">
-      <div class="flex-auto w-12">Email Me!</div>
-      <div class="flex-auto w-12">
-        <input
-          type="email"
-          placeholder = "example@yahoo.com"
-          class="bg-white border border-gray-300 rounded-lg p-2 py-2 block w-full focus:bg-blue-200"
-        />
-        
-      </div>
-            <div class="flex-auto w-12">Log me in!</div>
-      <div class="flex-auto w-12">
-        <input
-          type="text"
-          placeholder = "Enter your login"
-          class="bg-white border border-gray-300 rounded-lg p-2 py-2 block w-full focus:bg-blue-200"
-        />
+      <button
+        class="py-4 mr-3 bg-yellow-300 duration-1000 text-indigo font-bold py-2 px-4 rounded  hover:text-red-900 focus:bg-green-500 focus:border-yellow-500"
+      >
+        Submit
+      </button>
+      <button
+        class="py-4 mr-3 bg-yellow-300  text-indigo font-bold py-2 px-4 rounded  hover:bg-red-400 focus:bg-green-500 focus:border-yellow-500 transition-colors"
+      >
+        Submit
+      </button>
     </div>
   </body>
 </html>
