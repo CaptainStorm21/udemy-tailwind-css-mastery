@@ -19,35 +19,134 @@
     <h1 class="text-center text-6xl text-indigo-900 font-bold">
       Flexbox part 1
     </h1>
-    
+
     <div class="flex justify-start mt-4">
       <div class="bg-yellow-200 h-32 w-32">1</div>
       <div class="bg-yellow-400 h-32 w-32">2</div>
       <div class="bg-yellow-600 h-32 w-32">3</div>
     </div>
 
-        
     <div class="flex justify-center mt-4">
       <div class="bg-blue-200 h-32 w-32">1</div>
       <div class="bg-blue-400 h-32 w-32">2</div>
       <div class="bg-blue-600 h-32 w-32">3</div>
     </div>
 
-
-        
     <div class="flex justify-content-end mt-4">
       <div class="bg-gray-200 h-32 w-32">1</div>
       <div class="bg-gray-400 h-32 w-32">2</div>
       <div class="bg-gray-600 h-32 w-32">3</div>
     </div>
 
-        <div class="flex justify-between mt-4">
+    <div class="flex justify-between mt-4">
       <div class="bg-red-200 h-32 w-32">1</div>
       <div class="bg-red-400 h-32 w-32">2</div>
       <div class="bg-red-600 h-32 w-32">3</div>
     </div>
 
-
+    <div class="flex justify-around h-screen mt-4 items-center bg-yellow-400">
+      <div class="bg-gray-300 h-32 w-32">1</div>
+      <div class="bg-gray-500 h-32 w-32">2</div>
+      <div class="bg-gray-800 h-32 w-32">3</div>
     </div>
+
+    <!--center the bullet and hello world-->
+    <div class="flex items-center bg-green-700 mt-4">
+      <div class="text-2xl bg-green-500">&bull;</div>
+      <p class="text-5xl">Hello world!</p>
+    </div>
+
+    <!--flex direction -->
+    <div class="flex h-screen mt-4 flex-row-reverse">
+      <div class="bg-gray-300 h-32 w-32">1</div>
+      <div class="bg-gray-500 h-32 w-32">2</div>
+      <div class="bg-gray-700 h-32 w-32">3</div>
+    </div>
+
+    <!--flex direction - left- center stacked vertically -->
+    <div class="flex h-screen mt-4 flex-col justify-center">
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+    </div>
+
+    <!--flex direction -horizontal center -->
+    <div class="flex h-screen mt-4 flex justify-center">
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+    </div>
+
+    <!--flex direction -vertical center stacked -->
+    <div class="flex h-screen mt-4 items-center">
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+    </div>
+
+    <!--flex direction -vertical center stacked -->
+    <div class="flex h-screen mt-4 flex-col justify-center items-center">
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+    </div>
+
+    <!--flex direction - crunched horizontal next to each other -->
+    <div class="flex h-screen">
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+    </div>
+
+    <!--flex direction - crunched horizontal next to each other no space on top or on in between -->
+    <div class="flex flex-wrap">
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+    </div>
+
+        <!--flex direction - crunched horizontal next to each other no space on top or on in between in reverse -->
+    <div class="flex mt-4 flex-wrap-reverse">
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+      <div class="bg-green-300 h-32 w-32">1</div>
+    </div>
+
+            <!--flex direction - crunched horizontal next to each other no space on top or on in between in reverse -->
+    <div class="flex mt-4 flex-wrap-reverse">
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+      <div class="bg-green-300 h-32 w-32">1</div>
+      <div class="bg-yellow-500 h-32 w-32">2</div>
+      <div class="bg-red-700 h-32 w-32">3</div>
+      <div class="bg-green-300 h-32 w-32">1</div>
+    </div>
+
   </body>
 </html>
