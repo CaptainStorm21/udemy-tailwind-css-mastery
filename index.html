@@ -10,6 +10,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body class="p-6 bg-indigo-900">
     <h1 class="text-center text-6xl text-indigo-100">Transitions Modifiers</h1>
@@ -20,15 +24,23 @@
         Submit
       </button>
       <button
-        class="py-4 mr-3 bg-yellow-300 duration-1000 text-indigo font-bold py-2 px-4 rounded  hover:text-red-900 focus:bg-green-500 focus:border-yellow-500"
+        class="py-4 mr-3 ease-in-out bg-red-500 duration-1000 hover:bg-blue-700 text-gray-100 font-bold py-2 px-4 rounded px-4 focus:ease-in-out"
       >
-        Submit
+        <i class="animate-spin fa fa-google "></i>
+        Hello,<label>Google</label>!
       </button>
       <button
-        class="py-4 mr-3 bg-yellow-300  text-indigo font-bold py-2 px-4 rounded  hover:bg-red-400 focus:bg-green-500 focus:border-yellow-500 transition-colors"
+        class="py-4 mr-3 bg-yellow-300 text-indigo font-bold py-2 px-4 rounded hover:bg-red-400 focus:bg-green-500 focus:border-yellow-500 transition-colors"
       >
         Submit
       </button>
+      <button class="transform scale-120  transition-all animate-bounce py-4 mr-3  bg-blue-500 hover:bg-blue-700">
+      Animation!
+      </button>
+            <button class="transform hover:rotate-90 transition-all py-4 mr-3  bg-red-500 hover:bg-yellow-300">
+      On & Off!
+      </button>
     </div>
+    <div></div>
   </body>
 </html>
