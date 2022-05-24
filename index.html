@@ -17,27 +17,37 @@
   </head>
   <body class="bg-gray-200 h-screen py-5">
     <h1 class="text-center text-6xl text-indigo-900 font-bold">
-      Position & Container
+      Flexbox part 1
     </h1>
-    <div class="container mx-auto">
-      <div
-        class="sticky top-0 left-0 bg-yellow-500 h-10 border-white-alpha-40 rounded text-indigo-900 py-2 px-4"
-      >
-        <p class="font-bold text-center">Sale Until 5/30/2022</p>
-      </div>
-      <div class="bg-blue-300 p-10 mt-6 rounded-lg shadow-xl relative">
-        <div
-          class="absolute top-0 left-0 transform -translate-x-2 -translate-y-4 bg-yellow-500 h-10 border-white-alpha-40 rounded text-indigo-900 py-2 px-4"
-        >
-          <p class="font-bold text-center">20% Off</p>
-        </div>
-        <p class="mt-2">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quidem
-          natus maxime cupiditate? Minima vitae animi sequi tempore ipsam nihil!
-          Velit iure reiciendis modi sapiente voluptatibus sint soluta ipsa
-          nemo.
-        </p>
-      </div>
+    
+    <div class="flex justify-start mt-4">
+      <div class="bg-yellow-200 h-32 w-32">1</div>
+      <div class="bg-yellow-400 h-32 w-32">2</div>
+      <div class="bg-yellow-600 h-32 w-32">3</div>
+    </div>
+
+        
+    <div class="flex justify-center mt-4">
+      <div class="bg-blue-200 h-32 w-32">1</div>
+      <div class="bg-blue-400 h-32 w-32">2</div>
+      <div class="bg-blue-600 h-32 w-32">3</div>
+    </div>
+
+
+        
+    <div class="flex justify-content-end mt-4">
+      <div class="bg-gray-200 h-32 w-32">1</div>
+      <div class="bg-gray-400 h-32 w-32">2</div>
+      <div class="bg-gray-600 h-32 w-32">3</div>
+    </div>
+
+        <div class="flex justify-between mt-4">
+      <div class="bg-red-200 h-32 w-32">1</div>
+      <div class="bg-red-400 h-32 w-32">2</div>
+      <div class="bg-red-600 h-32 w-32">3</div>
+    </div>
+
+
     </div>
   </body>
 </html>
